@@ -58,6 +58,7 @@
                         <div class="menu">
                             <ul class="nav navbar-nav">
                                 <li class="active"><a href="search.php">Search</a></li>
+                                <li class="active"><a href="home.php">Logout</a></li>
                             </ul>
                         </div>
                     </div>

@@ -4,26 +4,7 @@
 
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         $search = $conn->real_escape_string($_POST['search']);
-    }
-
-    $sql="SELECT * FROM network
-    where username like '%$search%'";
-    $result = $conn->query($sql);
-    if($result->num_rows == 0){
-        echo "<p> No users with this username</p>";
-    }
-    else{
-        while($row = $result->fetch_assoc()){
-            echo "<p>".$row['username']."</p>";
-        }
-    }
-        
-    
-    
-
-
-    
-
+    }   
     
 
 
@@ -71,7 +52,8 @@
                     <div class="col-md-9 col-sm-9 col-xs-12">
                         <div class="menu">
                             <ul class="nav navbar-nav">
-                                <li class="active"><a href="search.php">Search</a></li>
+                                <li class="active"><a href="search.php">Search again</a></li>
+                                <li class="active"><a href="logout.php">Logout</a></li>
                             </ul>
                         </div>
                     </div>
@@ -89,15 +71,22 @@
                                 echo "<p> No users with this username</p>";
                             }
                             else{
-                                while($row = $result->fetch_assoc()){
-                                    echo "<p>".$row['username']."</p>";
+                                echo "Your search result with input username:";
+                                echo "<br>";
+                                while($row = $result->fetch_assoc()){  
+                                    echo "<p>"."Name:   ".$row['username']."</p>";                      
+                                    echo "<p>"."Username is:  ".$row['name']."</p>";
+                                    echo "<p>"."Email is:  ".$row['email']."</p>";
+
                                 }
                             }
 
                             ?>
                             </h1>
                             <p></p>
-                            <button><a href="search.php">Search</a></button>
+                            <button><a href="logout.php">Logout</a></button>
+                            <button><a href="search.php">Search again</a></button>
+
 
                         </div>
                     </div>

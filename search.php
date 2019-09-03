@@ -139,7 +139,7 @@
         
 
         <form method="POST" action="search_res.php">
-            <label for="user">Search by name:</label>
+            <label for="user">Search by username:</label>
             <input type="text" name="search" value="">
             <br>
             <br>

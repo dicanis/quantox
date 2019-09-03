@@ -26,7 +26,7 @@
             $result = $conn->query($sql);
             
 
-            //echo var_dump($result->num_rows);
+            // var_dump($result->num_rows);
             if($result->num_rows == 0){
                 if($newPass == $newPass2){
                     $newPass2 = md5($newPass2);
