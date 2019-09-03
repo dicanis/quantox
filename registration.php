@@ -28,7 +28,10 @@
 
             // var_dump($result->num_rows);
             if($result->num_rows == 0){
-                if($newPass == $newPass2){
+                if(empty($newPass2)){
+                    echo "Pasword cannot be empty";
+                }
+                elseif($newPass == $newPass2){
                     $newPass2 = md5($newPass2);
                     $sql= "INSERT INTO `network`
                     (`username`, `pass`, `name`, `email`)
@@ -41,8 +44,10 @@
                     else{
                             echo "Your password and confirmation password do not match";
                     }
-                    
-                }
+                }    
+            else {
+                    echo "Username must be unique";
+                }     
             }
             
 

@@ -149,6 +149,8 @@
                         <div class="menu">
                             <ul class="nav navbar-nav">
                                 <li class="active"><a href="registration.php">Registration</a></li>
+                                <li class="active"><a href="home.php">Home</a></li>
+
                             </ul>
                         </div>
                     </div>
