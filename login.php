@@ -24,7 +24,7 @@
                 }
                 else{
                     $_SESSION['id'] = $row['id'];
-                    header('Location: home.php');
+                    header('Location: welcome.php');
                 }
             }
         }

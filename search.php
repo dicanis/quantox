@@ -138,8 +138,8 @@
                 </div>
         
 
-        <form method="POST" action="search.php">
-            <label for="user">Search:</label>
+        <form method="POST" action="search_res.php">
+            <label for="user">Search by name:</label>
             <input type="text" name="search" value="">
             <br>
             <br>

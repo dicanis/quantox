@@ -1,20 +1,16 @@
 <?php
-    $servername = "localhost";
-    $username = "dica";
-    $password = "dicadica";
-    $database = "mreza";
+       require_once 'connection.php';
+       session_start ();
+       $id = $_SESSION['id'];
 
-    $conn = new mysqli($servername, $username,
-        $password, $database);
-
-    if($conn->connect_error)
-    {
-        die("Neuspela konekcija! Razlog: "
-            . $conn->connect_error);
-    }
-
-
-    $conn->set_charset('utf8');
+       $sql = "
+            SELECT name FROM network
+                WHERE id = $id";
+        $result = $conn->query($sql);
+        $row = $result->fetch_assoc();
+        
+        
+    
 
 
 ?>
@@ -69,7 +65,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="header-text">
-                            <h1>Welcome</h1>
+                            <h1><?php echo "Welcome  ". $row['name']; ?></h1>
                             <p></p>
                             <button><a href="search.php">Search</a></button>
 
