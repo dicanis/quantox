@@ -1,11 +1,9 @@
 <?php
-    // Konekcija ka bazi
     $servername = "localhost";
     $username = "dica";
     $password = "dicadica";
     $database = "mreza";
 
-    // Objekat konekcije
     $conn = new mysqli($servername, $username,
         $password, $database);
 
