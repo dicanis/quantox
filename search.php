@@ -131,7 +131,7 @@
                     <div class="col-md-9 col-sm-9 col-xs-12">
                         <div class="menu">
                             <ul class="nav navbar-nav">
-                                <li class="active"><a href="registration.php">Registration</a></li>
+                                <li class="active"><a href="logout.php">Logout</a></li>
                             </ul>
                         </div>
                     </div>

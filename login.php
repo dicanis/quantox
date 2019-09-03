@@ -20,7 +20,7 @@
             else{
                 $row = $result->fetch_assoc();
                 if(md5($pass) != $row['pass']){
-                    echo "Passwords doesn't match";
+                    echo "Passwords doesn't match ";
                 }
                 else{
                     $_SESSION['id'] = $row['id'];

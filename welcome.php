@@ -16,7 +16,7 @@
 
     $conn->set_charset('utf8');
 
-    
+
 ?>
 
 
@@ -62,7 +62,6 @@
                         <div class="menu">
                             <ul class="nav navbar-nav">
                                 <li class="active"><a href="search.php">Search</a></li>
-                                <li class="active"><a href="logout.php">Log out</a></li>
                             </ul>
                         </div>
                     </div>
@@ -72,7 +71,6 @@
                         <div class="header-text">
                             <h1>Welcome</h1>
                             <p></p>
-                            <button><a href="logout.php">Logout</a></button>
                             <button><a href="search.php">Search</a></button>
 
                         </div>
